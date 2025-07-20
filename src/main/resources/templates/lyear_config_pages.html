@@ -171,6 +171,12 @@
                     <small class="form-text">审核屏蔽开关仅针对审核版本生效</small>
                   </div>
 
+                  <div class="mb-3">
+                    <label for="brands" class="form-label">审核品牌</label>
+                    <input class="form-control" type="text" id="brands" name="brands" th:value="${configure==null?'':configure.brands}">
+                    <small class="form-text">多个品牌用英文逗号分隔，如：苹果,华为。留空则全部品牌都不生效。</small>
+                  </div>
+
                   <div>
                     <button type="button" id="configure_btn" class="btn btn-primary me-1">确 定</button>
                     <button type="button" class="btn btn-default" onclick="javascript:history.back(-1);return false;">返 回</button>

@@ -340,7 +340,7 @@ import org.springframework.ui.Model;
 /*      */ 
 /*      */     
 /*  286 */     if (System.getProperty("os.name").toLowerCase().contains("windows")) {
-/*  287 */       webSocket = "ws://localhost:9189";
+/*  287 */       webSocket = "ws://localhost:9999";
 /*      */     }
 /*      */     
 /*  290 */     model.addAttribute("platform_name", sb.toString());
